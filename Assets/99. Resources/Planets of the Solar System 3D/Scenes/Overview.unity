@@ -349,7 +349,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4643521465287934, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 703244457}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1733945558841920, guid: 300f80108a63f48618cb4a1c8b8c1e86, type: 3}
       insertIndex: -1
@@ -543,7 +546,6 @@ Transform:
   - {fileID: 992282782}
   - {fileID: 137279043}
   - {fileID: 729760129}
-  - {fileID: 703244457}
   - {fileID: 1570408459668571516}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -820,8 +822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 0}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: -41.639004
+  revolutionSpeed: 61.056534
   isRevolution: 0
 --- !u!1 &600204421 stripped
 GameObject:
@@ -926,8 +928,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: 50.999554
+  revolutionSpeed: 62.035786
   isRevolution: 1
 --- !u!1001 &703244456
 PrefabInstance:
@@ -935,7 +937,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 312968206}
+    m_TransformParent: {fileID: 256709530}
     m_Modifications:
     - target: {fileID: 1408581670749804, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_IsActive
@@ -963,19 +965,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.37630185
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 73.6
+      value: 3.5802774
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9986295
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.052335896
       objectReference: {fileID: 0}
     - target: {fileID: 4693579709242440, guid: f9a741bb8762344c6a2a9cb4217ef728, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1146,8 +1148,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: -56.117104
+  revolutionSpeed: 80.35767
   isRevolution: 1
 --- !u!1001 &992282781
 PrefabInstance:
@@ -1247,8 +1249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: 22.183496
+  revolutionSpeed: 78.748116
   isRevolution: 1
 --- !u!1 &1000719610 stripped
 GameObject:
@@ -1273,8 +1275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: -98.99161
+  revolutionSpeed: 92.29666
   isRevolution: 1
 --- !u!1 &1126782299 stripped
 GameObject:
@@ -1381,8 +1383,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: -18.71894
+  revolutionSpeed: 16.918747
   isRevolution: 1
 --- !u!1 &1526980365
 GameObject:
@@ -1619,8 +1621,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: 95.834625
+  revolutionSpeed: 88.6278
   isRevolution: 1
 --- !u!1001 &1946680567
 PrefabInstance:
@@ -1720,8 +1722,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: 8.506888
+  revolutionSpeed: 94.480896
   isRevolution: 1
 --- !u!1 &1991231031 stripped
 GameObject:
@@ -1741,8 +1743,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlanet: {fileID: 593481699}
-  rotSpeed: 30
-  revolutionSpeed: 100
+  rotSpeed: -77.23427
+  revolutionSpeed: 80.42492
   isRevolution: 1
 --- !u!1001 &1570408459668571515
 PrefabInstance:
