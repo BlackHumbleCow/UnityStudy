@@ -11,7 +11,7 @@ public class StudyGameObject : MonoBehaviour
     //public Quaternion rot; // 회전 0,0,0,0
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start() //유니티 에디터 실행시 1번 작동
+    void Awake() //유니티 에디터 실행시 1번 작동 - Start보다 제일 빠른 Awake
     {
         CreateAmogus();
 
@@ -37,11 +37,11 @@ public class StudyGameObject : MonoBehaviour
         //objTf.parent;
         //objTf.root;
 
-        Debug.Log($"캐릭터의 자식 오브젝트 수: {countObj}"); //자식 오브젝트의 수 접근은 transform을 통해
+        //Debug.Log($"캐릭터의 자식 오브젝트 수: {countObj}"); //자식 오브젝트의 수 접근은 transform을 통해
         
-        Debug.Log($"캐릭터의 첫번째 자식 오브젝트 수: {obj.transform.GetChild(0).name}"); //첫번째 자식 오브젝트 이름 접근
+        //Debug.Log($"캐릭터의 첫번째 자식 오브젝트 수: {obj.transform.GetChild(0).name}"); //첫번째 자식 오브젝트 이름 접근
 
-        Debug.Log($"캐릭터의 마지막 자식 오브젝트 수: {obj.transform.GetChild(countObj).name}"); //마지막 자식 오브젝트 이름 접근
+        //Debug.Log($"캐릭터의 마지막 자식 오브젝트 수: {obj.transform.GetChild(countObj).name}"); //마지막 자식 오브젝트 이름 접근
     }
 
 }

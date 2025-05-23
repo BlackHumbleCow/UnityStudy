@@ -41,16 +41,21 @@ public class Movement : MonoBehaviour
         //}
 
         //부드럽게 증감하는 값
-        float h = Input.GetAxis("Horizontal"); // x값 조작. 왼쪽은 -x값 오른쪽은 +값
-        float v = Input.GetAxis("Vertical"); //y값 조작. 위쪽은 +y값 아래쪽은 -y값
+        //float h = Input.GetAxis("Horizontal"); // x값 조작. 왼쪽은 -x값 오른쪽은 +값
+        //float v = Input.GetAxis("Vertical"); //y값 조작. 위쪽은 +y값 아래쪽은 -y값
 
-        //1씩 딱 떨어지는 값 1 아니면 -1
-        //float hr = Input.GetAxisRaw("Horizontal"); // x값 조작. 왼쪽은 -x값 오른쪽은 +값
-        //float vr = Input.GetAxisRaw("Vertical"); //y값 조작. 위쪽은 +y값 아래쪽은 -y값
+        //1씩 딱 떨어지는 값 1 아니면 -1 Raw(날 것의)
+        float hr = Input.GetAxisRaw("Horizontal"); // x값 조작. 왼쪽은 -x값 오른쪽은 +값
+        float vr = Input.GetAxisRaw("Vertical"); //y값 조작. 위쪽은 +y값 아래쪽은 -y값
 
-        Vector3 dir = new Vector3(h, 0, v);
-        Debug.Log($"현재 입력: {dir}");
+        Vector3 dir = new Vector3(hr, 0, vr); //이 곳의 뒤에 .normalized를 해도 동일
 
-        transform.position += dir * MoveSpeed * Time.deltaTime;
+        Vector3 normalDir = dir.normalized; // 정규화 과정(0~1)
+
+        Debug.Log($"현재 입력: {normalDir}");
+
+        transform.position += normalDir * MoveSpeed * Time.deltaTime;
+
+        transform.LookAt(transform.position + normalDir); 
     }
 }
